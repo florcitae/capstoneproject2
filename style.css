@@ -1,0 +1,248 @@
+/*Fonts*/
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+.bitter-light {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*Contenedores*/
+.container-about-me{
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    margin-left: 45px;
+    margin-right: 45px;
+    gap: 5px;
+}
+.container-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 45px;
+  margin-right: 45px;
+  gap: 20px;
+}
+
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*Caracteristicas de escritos o imagenes*/
+.titulos {
+    color: #DD6892;
+    font-size: 3em;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif ;
+    margin: 0px;
+}
+
+#subtitulo-inicio{
+    color: #3C6F9C;
+    font-size: 1.5em;
+    font-family: "Bitter", serif;
+    margin-top: 0px;
+}
+
+.parrafos {
+    color: #3C6F9C;
+    font-size: 18px;
+    font-family: "Bitter", serif;
+}
+.link-secciones {
+    color: #3C6F9C;
+    font-size: 10px;
+    font-family: "Bitter", serif;
+    margin-top: 5px;
+    margin-bottom: 45px;
+    font-weight: 20px;
+}
+.subtitulos {
+    color: #512C96;
+    font-size: 22px;
+    font-family: "Bitter", serif;
+}
+
+.icon {
+  display: inline-flex;
+  height: 80px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+.item {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: #F9C6BA;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  display: flex;
+  margin: 0px;
+}
+
+/*Fondo*/
+.gradient-background {
+    background: linear-gradient(300deg, #F9C6BA, #FFFEEF, #F9C6BA);
+    background-size: 200% 200%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: #FFFEEF;
+  }
+
+  /*Celdas del about me*/
+
+  .chihuahua {
+    grid-area: 1 / 1;
+    margin-bottom: 45px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+  }
+  
+  .utn {
+    grid-area: 1/ 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .utn-texto {
+    grid-area: 1 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .baile {
+    grid-area: 2 / 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  .baile-texto {
+    grid-area: 2 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  .ingles {
+    grid-area: 3 / 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ingles-texto {
+    grid-area: 3 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .introduccion {
+    grid-row: span 2;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: justify;
+  }
+
+  .agencia {
+    grid-area: 1 / 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+
+  .agencia-texto {
+    grid-area: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    margin-bottom: 45px;
+  }
+
+  .tindog {
+    grid-area: 2 / 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .tindog-texto {
+    grid-area: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    margin-bottom: 45px;
+    gap: 0px;
+  }
+
+  button {
+    border: 0px;
+    background-color: #3C6F9C;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
