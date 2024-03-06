@@ -269,7 +269,8 @@ hr {
     flex-direction: column;
   }
   .flex-container{
-    justify-content:center;
+    justify-content: center;
+    text-align: center;
   }
 
   .titulos {
@@ -284,10 +285,13 @@ hr {
 
   .imagenproyecto{
     height: 100px;
+    display: flex;
+    justify-content: center;
   }
 
   .imgchi{
     height: 75px;
+    border-radius: 50%;
   }
 
   .item {
@@ -302,6 +306,7 @@ hr {
   .utn , .baile, .ingles{
     display: flex;
   }
+
   .utn-texto, .baile-texto, .ingles-texto {
     display: flex;
     justify-content: center;
