@@ -302,4 +302,8 @@ hr {
   .utn , .baile, .ingles{
     display: flex;
   }
+  .utn-texto, .baile-texto, .ingles-texto {
+    display: flex;
+    justify-content: center;
+  }
 }
