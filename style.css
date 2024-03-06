@@ -269,7 +269,7 @@ hr {
     flex-direction: column;
   }
   .flex-container{
-    flex-direction: column;
+    justify-content:center;
   }
 
   .titulos {
